@@ -10,6 +10,6 @@ services:
     ports:
       - 5432:5432
     volumes:
-      - ./run/db-data:/var/lib/db/data
+      - ./run/db-data:/var/lib/postgresql/data
       - ./custom_postgresql.conf:/etc/postgresql/postgresql.conf:ro
     command: ["postgres", "-c", "config_file=/etc/postgresql/postgresql.conf"]
