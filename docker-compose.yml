@@ -17,7 +17,7 @@ services:
       - ./custom_postgresql.conf:/etc/postgresql/postgresql.conf:ro
     command: ["postgres", "-c", "config_file=/etc/postgresql/postgresql.conf"]
     ports:
-      - 5432:5450
+      - 5450:5432
 
 volumes:
   pgdata:
